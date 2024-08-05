@@ -13,4 +13,8 @@ class WeatherService
   def get_weather(coords)
     get_url("/v1/forecast.json?q=#{coords}&days=6")
   end
+
+  def get_forecast(coords)
+    get_url("/v1/forecast.json?q=#{coords}")
+  end
 end
