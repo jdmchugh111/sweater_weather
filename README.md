@@ -15,7 +15,7 @@ This repo is a REST API built with rails. It consumes json from the [MapQuest AP
 - (Fork) and Clone this repo
 - run `bundle install`
 - run `rails db:{drop,create,migrate}`
-- to use routes in development enivornment (through Postman or some other tool), run `rails s` and use `http://localhost:3000` as your base url
+- to use routes in development enivronment (through Postman or some other tool), run `rails s` and use `http://localhost:3000` as your base url
 
 ## API Endpoints
 
