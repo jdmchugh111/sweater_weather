@@ -1,6 +1,6 @@
 # README
 
-This repo is a REST API built with rails. It consumes json from the [MapQuest API]([https://developer.mapquest.com/]) and [Weather API]([https://www.weatherapi.com/]) to give weather data for a given city, give roadtrip info for an origin and destination (with weather at your eta), and also allows for user sign up/log in and api key authentication.
+This repo is a REST API built with rails. It consumes json from the [MapQuest API](https://developer.mapquest.com/) and [Weather API](https://www.weatherapi.com/) to give weather data for a given city, give roadtrip info for an origin and destination (with weather at your eta), and also allows for user sign up/log in and api key authentication.
 
 ## Learning Goals of This Project
 
