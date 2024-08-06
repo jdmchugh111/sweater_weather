@@ -1,0 +1,195 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&location=new%20york,ny
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Aug 2024 02:34:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '801'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 65e402a0-539c-11ef-9b52-6fe3738f6c87
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"321-uH2srhoN/fiFhYAajEoZHSJoo1U"
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"© 2024 MapQuest, Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"©
+        2024 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"new
+        york,ny"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"New
+        York","adminArea5Type":"City","adminArea4":"New York","adminArea4Type":"County","adminArea3":"NY","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"0","unknownInput":"","type":"s","latLng":{"lat":40.71453,"lng":-74.00712},"displayLatLng":{"lat":40.71453,"lng":-74.00712},"mapUrl":""}]}]}'
+  recorded_at: Tue, 06 Aug 2024 02:34:26 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=boston,ma&key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&to=new%20york,ny
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Aug 2024 02:34:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '17114'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 66074210-539c-11ef-8544-5fb6635be837
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"42da-eezaZPuP/v9n2+sRceXOjqzAn/Q"
+    body:
+      encoding: UTF-8
+      string: '{"route":{"sessionId":"AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car","realTime":12487,"distance":215.1939,"time":12517,"formattedTime":"03:28:37","hasHighway":true,"hasTollRoad":true,"hasBridge":true,"hasSeasonalClosure":false,"hasTunnel":true,"hasFerry":false,"hasUnpaved":false,"hasTimedRestriction":false,"hasCountryCross":false,"legs":[{"index":0,"hasTollRoad":true,"hasHighway":true,"hasBridge":true,"hasUnpaved":false,"hasTunnel":true,"hasSeasonalClosure":false,"hasFerry":false,"hasCountryCross":false,"hasTimedRestriction":false,"distance":215.1939,"time":12487,"formattedTime":"03:28:07","origIndex":0,"origNarrative":"","destIndex":0,"destNarrative":"","maneuvers":[{"index":0,"distance":0.3492,"narrative":"Head
+        toward Quaker Ln on Congress St. Go for 0.3 mi.","time":59,"direction":5,"directionName":"Southeast","signs":[],"maneuverNotes":[],"formattedTime":"00:00:59","transportMode":"car","startPoint":{"lat":42.358659,"lng":-71.056743},"turnType":0,"attributes":0,"iconUrl":"","streets":["Congress
+        St","Post Office Sq"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=42.358659,-71.056743|marker-1||42.35417,-71.05407999999997|marker-2||&center=42.3564145,-71.05541149999999&defaultMarker=none&zoom=14&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":1,"distance":55.9532,"narrative":"Turn
+        slightly right and take ramp onto I-90 W (Mass Pike) toward Worcester. Go
+        for 56.0 mi.","time":3089,"direction":7,"directionName":"West","signs":[],"maneuverNotes":[],"formattedTime":"00:51:29","transportMode":"car","startPoint":{"lat":42.35417,"lng":-71.05407999999997},"turnType":12,"attributes":0,"iconUrl":"","streets":["I-90","Mass
+        Pike","Massachusetts Tpke"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=42.35417,-71.05407999999997|marker-2||42.131839999999855,-72.0530300000005|marker-3||&center=42.243004999999926,-71.55355500000024&defaultMarker=none&zoom=7&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":2,"distance":8.506,"narrative":"Take
+        exit 78 toward I-84/Hartford Ct/NY City onto I-84 W. Go for 8.5 mi.","time":442,"direction":6,"directionName":"Southwest","signs":[],"maneuverNotes":[],"formattedTime":"00:07:22","transportMode":"car","startPoint":{"lat":42.131839999999855,"lng":-72.0530300000005},"turnType":14,"attributes":0,"iconUrl":"","streets":["I-84"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=42.131839999999855,-72.0530300000005|marker-3||42.030139999999754,-72.1369700000006|marker-4||&center=42.0809899999998,-72.09500000000055&defaultMarker=none&zoom=9&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":3,"distance":25.0816,"narrative":"Continue
+        on I-84 W. Go for 25.1 mi.","time":1250,"direction":6,"directionName":"Southwest","signs":[],"maneuverNotes":[],"formattedTime":"00:20:50","transportMode":"car","startPoint":{"lat":42.030139999999754,"lng":-72.1369700000006},"turnType":0,"attributes":0,"iconUrl":"","streets":["I-84"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=42.030139999999754,-72.1369700000006|marker-4||41.82233999999977,-72.50329000000073|marker-5||&center=41.926239999999765,-72.32013000000066&defaultMarker=none&zoom=8&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":4,"distance":8.1704,"narrative":"Keep
+        right onto I-84 W. Go for 8.2 mi.","time":418,"direction":6,"directionName":"Southwest","signs":[],"maneuverNotes":[],"formattedTime":"00:06:58","transportMode":"car","startPoint":{"lat":41.82233999999977,"lng":-72.50329000000073},"turnType":16,"attributes":0,"iconUrl":"","streets":["I-84","US-6"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=41.82233999999977,-72.50329000000073|marker-5||41.764349999999766,-72.63140000000074|marker-6||&center=41.79334499999977,-72.56734500000073&defaultMarker=none&zoom=10&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":5,"distance":1.0886,"narrative":"Take
+        left exit 57 toward Charter Oak Br/I-91 S/N.Y. City onto CT-15 S. Go for 1.1
+        mi.","time":61,"direction":6,"directionName":"Southwest","signs":[],"maneuverNotes":[],"formattedTime":"00:01:01","transportMode":"car","startPoint":{"lat":41.764349999999766,"lng":-72.63140000000074},"turnType":15,"attributes":0,"iconUrl":"","streets":["CT-15"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=41.764349999999766,-72.63140000000074|marker-6||41.75649999999977,-72.64928000000073|marker-7||&center=41.76042499999977,-72.64034000000073&defaultMarker=none&zoom=12&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":6,"distance":0.8003,"narrative":"Continue
+        on US-5 S. Go for 0.8 mi.","time":48,"direction":6,"directionName":"Southwest","signs":[],"maneuverNotes":[],"formattedTime":"00:00:48","transportMode":"car","startPoint":{"lat":41.75649999999977,"lng":-72.64928000000073},"turnType":0,"attributes":0,"iconUrl":"","streets":["US-5","CT-15","Charter
+        Oak Brg"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=41.75649999999977,-72.64928000000073|marker-7||41.74816999999979,-72.65989000000074|marker-8||&center=41.752334999999775,-72.65458500000074&defaultMarker=none&zoom=13&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":7,"distance":17.1219,"narrative":"Take
+        exit 86 toward New Haven/N.Y. City onto I-91 S. Go for 17.1 mi.","time":899,"direction":6,"directionName":"Southwest","signs":[],"maneuverNotes":[],"formattedTime":"00:14:59","transportMode":"car","startPoint":{"lat":41.74816999999979,"lng":-72.65989000000074},"turnType":14,"attributes":0,"iconUrl":"","streets":["I-91"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=41.74816999999979,-72.65989000000074|marker-8||41.533779999999794,-72.76788000000087|marker-9||&center=41.64097499999979,-72.7138850000008&defaultMarker=none&zoom=9&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":8,"distance":64.86,"narrative":"Take
+        exit 17 toward W. Cross Pkwy onto CT-15 S (Wilbur Cross Pkwy). Go for 64.9
+        mi.","time":3569,"direction":6,"directionName":"Southwest","signs":[],"maneuverNotes":[],"formattedTime":"00:59:29","transportMode":"car","startPoint":{"lat":41.533779999999794,"lng":-72.76788000000087},"turnType":14,"attributes":0,"iconUrl":"","streets":["CT-15","Wilbur
+        Cross Pkwy","Merritt Pkwy"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=41.533779999999794,-72.76788000000087|marker-9||41.03681999999983,-73.67556000000134|marker-10||&center=41.28529999999981,-73.22172000000111&defaultMarker=none&zoom=7&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":9,"distance":10.6391,"narrative":"Continue
+        on Hutchinson River Pkwy. Go for 10.6 mi.","time":638,"direction":6,"directionName":"Southwest","signs":[],"maneuverNotes":[],"formattedTime":"00:10:38","transportMode":"car","startPoint":{"lat":41.03681999999983,"lng":-73.67556000000134},"turnType":0,"attributes":0,"iconUrl":"","streets":["Hutchinson
+        River Pkwy"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=41.03681999999983,-73.67556000000134|marker-10||40.93894999999982,-73.80622000000146|marker-11||&center=40.98788499999982,-73.7408900000014&defaultMarker=none&zoom=9&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":10,"distance":4.6963,"narrative":"Keep
+        left onto Cross County Pkwy toward Cross County Pkwy/George Washington Br.
+        Go for 4.7 mi.","time":302,"direction":7,"directionName":"West","signs":[],"maneuverNotes":[],"formattedTime":"00:05:02","transportMode":"car","startPoint":{"lat":40.93894999999982,"lng":-73.80622000000146},"turnType":17,"attributes":0,"iconUrl":"","streets":["Cross
+        County Pkwy"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=40.93894999999982,-73.80622000000146|marker-11||40.932039999999795,-73.87728000000155|marker-12||&center=40.935494999999804,-73.8417500000015&defaultMarker=none&zoom=11&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":11,"distance":1.8678,"narrative":"Take
+        the left exit toward New York City onto Saw Mill Pkwy. Go for 1.9 mi.","time":132,"direction":4,"directionName":"South","signs":[],"maneuverNotes":[],"formattedTime":"00:02:12","transportMode":"car","startPoint":{"lat":40.932039999999795,"lng":-73.87728000000155},"turnType":15,"attributes":0,"iconUrl":"","streets":["Saw
+        Mill Pkwy","Saw Mill River Pkwy S"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=40.932039999999795,-73.87728000000155|marker-12||40.90817999999978,-73.8861900000016|marker-13||&center=40.92010999999979,-73.88173500000158&defaultMarker=none&zoom=12&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":12,"distance":0.366,"narrative":"Continue
+        on Henry Hudson Pkwy. Go for 0.4 mi.","time":23,"direction":4,"directionName":"South","signs":[],"maneuverNotes":[],"formattedTime":"00:00:23","transportMode":"car","startPoint":{"lat":40.90817999999978,"lng":-73.8861900000016},"turnType":0,"attributes":0,"iconUrl":"","streets":["Henry
+        Hudson Pkwy"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=40.90817999999978,-73.8861900000016|marker-13||40.90309999999978,-73.88818000000161|marker-14||&center=40.90563999999978,-73.88718500000161&defaultMarker=none&zoom=14&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":13,"distance":0.5884,"narrative":"Take
+        the exit toward H Hudson Pkwy South onto Henry Hudson Pkwy. Go for 0.6 mi.","time":42,"direction":7,"directionName":"West","signs":[],"maneuverNotes":[],"formattedTime":"00:00:42","transportMode":"car","startPoint":{"lat":40.90309999999978,"lng":-73.88818000000161},"turnType":14,"attributes":0,"iconUrl":"","streets":["Henry
+        Hudson Pkwy"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=40.90309999999978,-73.88818000000161|marker-14||40.90026999999979,-73.8968300000016|marker-15||&center=40.90168499999979,-73.8925050000016&defaultMarker=none&zoom=14&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":14,"distance":14.742,"narrative":"Continue
+        on RT-9A S (Henry Hudson Pkwy). Go for 14.7 mi.","time":1368,"direction":6,"directionName":"Southwest","signs":[],"maneuverNotes":[],"formattedTime":"00:22:48","transportMode":"car","startPoint":{"lat":40.90026999999979,"lng":-73.8968300000016},"turnType":0,"attributes":0,"iconUrl":"","streets":["RT-9A","Henry
+        Hudson Pkwy","Henry Hudson Brg","West Side Hwy","Joe Dimaggio Hwy","12th Ave","N
+        River Piers","11th Ave","West St","Detective Claude \"Danny\" Richards Way"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=40.90026999999979,-73.8968300000016|marker-15||40.71722999999987,-74.01299000000193|marker-16||&center=40.80874999999983,-73.95491000000177&defaultMarker=none&zoom=9&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":15,"distance":0.3629,"narrative":"Turn
+        left onto Chambers St. Go for 0.4 mi.","time":147,"direction":5,"directionName":"Southeast","signs":[],"maneuverNotes":[],"formattedTime":"00:02:27","transportMode":"car","startPoint":{"lat":40.71722999999987,"lng":-74.01299000000193},"turnType":6,"attributes":0,"iconUrl":"","streets":["Chambers
+        St","Frederick Douglass Lndg"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=GzromzOTeut8c39w4Jk6sVtVyxH6jTo7&size=225,160&locations=40.71722999999987,-74.01299000000193|marker-16||40.71453199999987,-74.00711900000192|marker-17||&center=40.71588099999987,-74.01005450000193&defaultMarker=none&zoom=14&session=AJsA_v___wYAAQDMAAAAeNpjOMPAwMTAwMCekVqUapWcu_X9THEgl-HXObdaLp5nzRW-izTk42D0PiA9G0gzYAEwE_onlUmC-J_TLeuZeKyy4r3n3_ocA6N9gPQOIM2AA4SvX9q8mRHIcFecKMKgAhYDuW_jQYYFQEoBxG9gYHAAih5QaGF2APE5GLQmNTgwOHAoMgEAX4AwOkD11_0:car"},{"index":16,"distance":0,"narrative":"Arrive
+        at Chambers St.","time":0,"direction":0,"directionName":"None","signs":[],"maneuverNotes":[],"formattedTime":"00:00:00","transportMode":"car","startPoint":{"lat":40.71453199999987,"lng":-74.00711900000192},"turnType":0,"attributes":0,"iconUrl":"","streets":[]}]}],"options":{"routeType":"FASTEST","narrativeType":"text","enhancedNarrative":false,"walkingSpeed":-1,"highwayEfficiency":22,"avoids":false,"generalize":-1,"shapeFormat":"raw","unit":"M","locale":"en_US","useTraffic":false,"timeType":0,"dateType":0,"doReverseGeocode":true,"manMaps":true,"tollCost":false,"sideOfStreetDisplay":true},"boundingBox":{"ul":{"lat":42.358659,"lng":-74.01299000000193},"lr":{"lat":40.71453199999987,"lng":-71.05407999999997}},"name":"CT-15
+        and I-90","maxRoutes":"","locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Boston","adminArea5Type":"City","adminArea4":"Suffolk","adminArea4Type":"County","adminArea3":"MA","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"0","unknownInput":"","type":"s","latLng":{"lat":42.35866,"lng":-71.05674},"displayLatLng":{"lat":42.35866,"lng":-71.05674},"mapUrl":""},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"New
+        York","adminArea5Type":"City","adminArea4":"New York","adminArea4Type":"County","adminArea3":"NY","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"0","unknownInput":"","type":"s","latLng":{"lat":40.71453,"lng":-74.00712},"displayLatLng":{"lat":40.71453,"lng":-74.00712},"mapUrl":""}],"locationSequence":[0,1]},"info":{"statuscode":0,"copyright":{"text":"©
+        2024 MapQuest, Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"©
+        2024 MapQuest, Inc."},"messages":[]}}'
+  recorded_at: Tue, 06 Aug 2024 02:34:26 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/forecast.json?dt=2024-08-06&hour=02&key=1d62709f9ba242638d7162145240208&q=40.71453,-74.00712
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Aug 2024 02:34:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-940
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 haproxy-api-1 (Varnish/7.3)
+      X-Weatherapi-Qpm-Left:
+      - '4999959'
+      X-Varnish:
+      - '120413656'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '08/06/2024 02:34:26'
+      Cdn-Edgestorageid:
+      - '941'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 7fa1f2d8658a090f28c5e334f76ae00b
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"location":{"name":"New York","region":"New York","country":"United
+        States of America","lat":40.71,"lon":-74.01,"tz_id":"America/New_York","localtime_epoch":1722911574,"localtime":"2024-08-05
+        22:32"},"current":{"last_updated_epoch":1722911400,"last_updated":"2024-08-05
+        22:30","temp_c":29.3,"temp_f":84.7,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":8.3,"wind_kph":13.3,"wind_degree":239,"wind_dir":"WSW","pressure_mb":1014.0,"pressure_in":29.93,"precip_mm":0.0,"precip_in":0.0,"humidity":45,"cloud":19,"feelslike_c":30.1,"feelslike_f":86.2,"windchill_c":29.3,"windchill_f":84.7,"heatindex_c":30.1,"heatindex_f":86.2,"dewpoint_c":16.3,"dewpoint_f":61.3,"vis_km":10.0,"vis_miles":6.0,"uv":1.0,"gust_mph":13.2,"gust_kph":21.2},"forecast":{"forecastday":[{"date":"2024-08-06","date_epoch":1722902400,"day":{"maxtemp_c":30.9,"maxtemp_f":87.6,"mintemp_c":22.9,"mintemp_f":73.2,"avgtemp_c":27.2,"avgtemp_f":80.9,"maxwind_mph":11.4,"maxwind_kph":18.4,"totalprecip_mm":9.91,"totalprecip_in":0.39,"totalsnow_cm":0.0,"avgvis_km":9.5,"avgvis_miles":5.0,"avghumidity":67,"daily_will_it_rain":1,"daily_chance_of_rain":93,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Moderate
+        rain","icon":"//cdn.weatherapi.com/weather/64x64/day/302.png","code":1189},"uv":8.0},"astro":{"sunrise":"05:58
+        AM","sunset":"08:05 PM","moonrise":"07:56 AM","moonset":"09:24 PM","moon_phase":"Waxing
+        Crescent","moon_illumination":2,"is_moon_up":1,"is_sun_up":1},"hour":[{"time_epoch":1722924000,"time":"2024-08-06
+        02:00","temp_c":27.0,"temp_f":80.5,"is_day":0,"condition":{"text":"Partly
+        Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png","code":1003},"wind_mph":8.3,"wind_kph":13.3,"wind_degree":246,"wind_dir":"WSW","pressure_mb":1013.0,"pressure_in":29.91,"precip_mm":0.0,"precip_in":0.0,"snow_cm":0.0,"humidity":68,"cloud":25,"feelslike_c":28.8,"feelslike_f":83.8,"windchill_c":27.0,"windchill_f":80.5,"heatindex_c":28.8,"heatindex_f":83.8,"dewpoint_c":20.4,"dewpoint_f":68.8,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":11.6,"gust_kph":18.6,"uv":0}]}]}}'
+  recorded_at: Tue, 06 Aug 2024 02:34:26 GMT
+recorded_with: VCR 6.2.0
