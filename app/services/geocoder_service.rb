@@ -13,4 +13,8 @@ class GeocoderService
   def get_coords(city)
     get_url("/geocoding/v1/address?location=#{city}")
   end
+
+  def get_directions(origin, destination)
+    get_url("/directions/v2/route?from=#{origin}&to=#{destination}")
+  end
 end
